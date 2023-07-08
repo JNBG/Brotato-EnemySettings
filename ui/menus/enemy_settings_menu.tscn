@@ -1,0 +1,1672 @@
+[gd_scene load_steps=95 format=2]
+
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/extensions/ui/menus/pages/menu_enemy_settings_options.gd" type="Script" id=1]
+[ext_resource path="res://ui/menus/global/my_menu_button.gd" type="Script" id=2]
+[ext_resource path="res://resources/themes/base_theme.tres" type="Theme" id=3]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/001/enemy_settings_baby_alien.png" type="Texture" id=4]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/001/enemy_settings_baby_alien_hover.png" type="Texture" id=5]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/001/enemy_settings_baby_alien_active.png" type="Texture" id=6]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/002/enemy_settings_chaser.png" type="Texture" id=7]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/002/enemy_settings_chaser_hover.png" type="Texture" id=8]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/002/enemy_settings_chaser_active.png" type="Texture" id=9]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/010/enemy_settings_predator_hover.png" type="Texture" id=10]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/010/enemy_settings_predator.png" type="Texture" id=11]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/026/enemy_settings_lamprey_active.png" type="Texture" id=12]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/019/enemy_settings_horned_charger.png" type="Texture" id=13]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/004/enemy_settings_charger_hover.png" type="Texture" id=14]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/004/enemy_settings_charger_active.png" type="Texture" id=15]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/003/enemy_settings_spitter_active.png" type="Texture" id=16]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/004/enemy_settings_charger.png" type="Texture" id=17]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/003/enemy_settings_spitter_hover.png" type="Texture" id=18]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/003/enemy_settings_spitter.png" type="Texture" id=19]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/032/enemy_settings_insect.png" type="Texture" id=20]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/033/enemy_settings_mom.png" type="Texture" id=21]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/011/enemy_settings_invoker_active.png" type="Texture" id=22]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/028/enemy_settings_colossus.png" type="Texture" id=23]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/034/enemy_settings_demon.png" type="Texture" id=24]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/021/enemy_settings_butcher_activepng.png" type="Texture" id=25]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/020/enemy_settings_rhino.png" type="Texture" id=26]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/022/enemy_settings_monk_hover.png" type="Texture" id=27]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/011/enemy_settings_invoker.png" type="Texture" id=28]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/020/enemy_settings_rhino_hover.png" type="Texture" id=29]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/027/enemy_settings_croco_hover.png" type="Texture" id=30]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/028/enemy_settings_colossus_active.png" type="Texture" id=31]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/022/enemy_settings_monk.png" type="Texture" id=32]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/028/enemy_settings_colossus_hover.png" type="Texture" id=33]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/032/enemy_settings_insect_active.png" type="Texture" id=34]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/034/enemy_settings_demon_hover.png" type="Texture" id=35]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/021/enemy_settings_butcher.png" type="Texture" id=36]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/022/enemy_settings_monk_active.png" type="Texture" id=37]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/032/enemy_settings_insect_hover.png" type="Texture" id=38]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/027/enemy_settings_croco.png" type="Texture" id=39]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/021/enemy_settings_butcher_hover.png" type="Texture" id=40]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/027/enemy_settings_croco_active.png" type="Texture" id=41]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/033/enemy_settings_mom_hover.png" type="Texture" id=42]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/034/enemy_settings_demon_active.png" type="Texture" id=43]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/033/enemy_settings_mom_active.png" type="Texture" id=44]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/011/enemy_settings_invoker_hover.png" type="Texture" id=45]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/020/enemy_settings_rhino_active.png" type="Texture" id=46]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/025/enemy_settings_tentacle.png" type="Texture" id=47]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/025/enemy_settings_tentacle_hover.png" type="Texture" id=48]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/025/enemy_settings_tentacle_active.png" type="Texture" id=49]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/026/enemy_settings_lamprey.png" type="Texture" id=50]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/026/enemy_settings_lamprey_hover.png" type="Texture" id=51]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/010/enemy_settings_predator_active.png" type="Texture" id=52]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/017/enemy_settings_junkie.png" type="Texture" id=53]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/015/enemy_settings_fin_alien_hover.png" type="Texture" id=54]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/015/enemy_settings_fin_alien_active.png" type="Texture" id=55]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/016/enemy_settings_spawner_hover.png" type="Texture" id=56]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/017/enemy_settings_junkie_active.png" type="Texture" id=57]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/014/enemy_settings_helmet_alien_active.png" type="Texture" id=58]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/015/enemy_settings_fin_alien.png" type="Texture" id=59]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/018/enemy_settings_horned_bruiser_hover.png" type="Texture" id=60]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/019/enemy_settings_horned_charger_hover.png" type="Texture" id=61]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/016/enemy_settings_spawner_active.png" type="Texture" id=62]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/016/enemy_settings_spawner.png" type="Texture" id=63]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/017/enemy_settings_junkie_hover.png" type="Texture" id=64]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/018/enemy_settings_horned_bruiser.png" type="Texture" id=65]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/018/enemy_settings_horned_bruiser_active.png" type="Texture" id=66]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/005/enemy_settings_pursuer_active.png" type="Texture" id=67]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/006/enemy_settings_bruiser_hover.png" type="Texture" id=68]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/007/enemy_settings_buffer.png" type="Texture" id=69]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/007/enemy_settings_buffer_hover.png" type="Texture" id=70]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/007/enemy_settings_buffer_active.png" type="Texture" id=71]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/012/enemy_settings_healer.png" type="Texture" id=72]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/008/enemy_settings_fly_active.png" type="Texture" id=73]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/012/enemy_settings_healer_active.png" type="Texture" id=74]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/013/enemy_settings_looter.png" type="Texture" id=75]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/013/enemy_settings_looter_active.png" type="Texture" id=76]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/014/enemy_settings_helmet_alien.png" type="Texture" id=77]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/005/enemy_settings_pursuer_hover.png" type="Texture" id=78]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/012/enemy_settings_healer_hover.png" type="Texture" id=79]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/013/enemy_settings_looter_hover.png" type="Texture" id=80]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/014/enemy_settings_helmet_alien_hover.png" type="Texture" id=81]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/005/enemy_settings_pursuer.png" type="Texture" id=82]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/006/enemy_settings_bruiser_active.png" type="Texture" id=83]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/008/enemy_settings_fly.png" type="Texture" id=84]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/008/enemy_settings_fly_hover.png" type="Texture" id=85]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/006/enemy_settings_bruiser.png" type="Texture" id=86]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/023/enemy_settings_slasher_egg.png" type="Texture" id=87]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/024/enemy_settings_slasher_active.png" type="Texture" id=88]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/019/enemy_settings_horned_charger_active.png" type="Texture" id=89]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/023/enemy_settings_slasher_egg_hover.png" type="Texture" id=90]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/023/enemy_settings_slasher_egg_active.png" type="Texture" id=91]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/024/enemy_settings_slasher.png" type="Texture" id=92]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/024/enemy_settings_slasher_hover.png" type="Texture" id=93]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/menus/dot.png" type="Texture" id=94]
+
+[node name="MenuEnemySettings" type="MarginContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 3 )
+script = ExtResource( 1 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_right = 1920.0
+margin_bottom = 1080.0
+theme = ExtResource( 3 )
+custom_constants/separation = 20
+alignment = 1
+
+[node name="Headline" type="Label" parent="VBoxContainer"]
+margin_top = 40.0
+margin_right = 1920.0
+margin_bottom = 85.0
+text = "ENEMY_SETTINGS_HEADLINE"
+align = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 105.0
+margin_right = 1920.0
+margin_bottom = 955.0
+
+[node name="AlienButtons" type="VFlowContainer" parent="VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+margin_right = 308.0
+margin_bottom = 850.0
+
+[node name="BabyAlienButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_right = 100.0
+margin_bottom = 100.0
+texture_normal = ExtResource( 4 )
+texture_hover = ExtResource( 5 )
+texture_focused = ExtResource( 6 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/BabyAlienButton"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -8.0
+margin_top = -2.0
+margin_right = 2.0
+margin_bottom = 8.0
+texture = ExtResource( 94 )
+
+[node name="ChargerButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_top = 104.0
+margin_right = 100.0
+margin_bottom = 204.0
+texture_normal = ExtResource( 17 )
+texture_hover = ExtResource( 14 )
+texture_focused = ExtResource( 15 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/ChargerButton"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -8.0
+margin_top = -2.0
+margin_right = 2.0
+margin_bottom = 8.0
+texture = ExtResource( 94 )
+
+[node name="BufferButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_top = 208.0
+margin_right = 100.0
+margin_bottom = 308.0
+rect_pivot_offset = Vector2( -1749, 21 )
+texture_normal = ExtResource( 69 )
+texture_hover = ExtResource( 70 )
+texture_focused = ExtResource( 71 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/BufferButton"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -8.0
+margin_top = -2.0
+margin_right = 2.0
+margin_bottom = 8.0
+texture = ExtResource( 94 )
+
+[node name="LooterButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_top = 312.0
+margin_right = 100.0
+margin_bottom = 412.0
+texture_normal = ExtResource( 75 )
+texture_hover = ExtResource( 80 )
+texture_focused = ExtResource( 76 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/LooterButton"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -8.0
+margin_top = -2.0
+margin_right = 2.0
+margin_bottom = 8.0
+texture = ExtResource( 94 )
+
+[node name="SpawnerButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_top = 416.0
+margin_right = 100.0
+margin_bottom = 516.0
+texture_normal = ExtResource( 63 )
+texture_hover = ExtResource( 56 )
+texture_focused = ExtResource( 62 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/SpawnerButton"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -8.0
+margin_top = -2.0
+margin_right = 2.0
+margin_bottom = 8.0
+texture = ExtResource( 94 )
+
+[node name="HornedChargerButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_top = 520.0
+margin_right = 100.0
+margin_bottom = 620.0
+texture_normal = ExtResource( 13 )
+texture_hover = ExtResource( 61 )
+texture_focused = ExtResource( 89 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/HornedChargerButton"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -8.0
+margin_top = -2.0
+margin_right = 2.0
+margin_bottom = 8.0
+texture = ExtResource( 94 )
+
+[node name="TentacleButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_top = 624.0
+margin_right = 100.0
+margin_bottom = 724.0
+texture_normal = ExtResource( 47 )
+texture_hover = ExtResource( 48 )
+texture_focused = ExtResource( 49 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/TentacleButton"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -8.0
+margin_top = -2.0
+margin_right = 2.0
+margin_bottom = 8.0
+texture = ExtResource( 94 )
+
+[node name="Spacer2" type="Control" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_top = 728.0
+margin_right = 100.0
+margin_bottom = 828.0
+rect_min_size = Vector2( 100, 100 )
+
+[node name="ChaserButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_left = 104.0
+margin_right = 204.0
+margin_bottom = 100.0
+texture_normal = ExtResource( 7 )
+texture_hover = ExtResource( 8 )
+texture_focused = ExtResource( 9 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/ChaserButton"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -8.0
+margin_top = -2.0
+margin_right = 2.0
+margin_bottom = 8.0
+texture = ExtResource( 94 )
+
+[node name="PursuerButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_left = 104.0
+margin_top = 104.0
+margin_right = 204.0
+margin_bottom = 204.0
+texture_normal = ExtResource( 82 )
+texture_hover = ExtResource( 78 )
+texture_focused = ExtResource( 67 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/PursuerButton"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -8.0
+margin_top = -2.0
+margin_right = 2.0
+margin_bottom = 8.0
+texture = ExtResource( 94 )
+
+[node name="FlyButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_left = 104.0
+margin_top = 208.0
+margin_right = 204.0
+margin_bottom = 308.0
+texture_normal = ExtResource( 84 )
+texture_hover = ExtResource( 85 )
+texture_focused = ExtResource( 73 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/FlyButton"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -8.0
+margin_top = -2.0
+margin_right = 2.0
+margin_bottom = 8.0
+texture = ExtResource( 94 )
+
+[node name="HelmetAlienButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_left = 104.0
+margin_top = 312.0
+margin_right = 204.0
+margin_bottom = 412.0
+texture_normal = ExtResource( 77 )
+texture_hover = ExtResource( 81 )
+texture_focused = ExtResource( 58 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/HelmetAlienButton"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -8.0
+margin_top = -2.0
+margin_right = 2.0
+margin_bottom = 8.0
+texture = ExtResource( 94 )
+
+[node name="JunkieButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_left = 104.0
+margin_top = 416.0
+margin_right = 204.0
+margin_bottom = 516.0
+texture_normal = ExtResource( 53 )
+texture_hover = ExtResource( 64 )
+texture_focused = ExtResource( 57 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/JunkieButton"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -8.0
+margin_top = -2.0
+margin_right = 2.0
+margin_bottom = 8.0
+texture = ExtResource( 94 )
+
+[node name="SlasherEggButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_left = 104.0
+margin_top = 520.0
+margin_right = 204.0
+margin_bottom = 620.0
+texture_normal = ExtResource( 87 )
+texture_hover = ExtResource( 90 )
+texture_focused = ExtResource( 91 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/SlasherEggButton"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -8.0
+margin_top = -2.0
+margin_right = 2.0
+margin_bottom = 8.0
+texture = ExtResource( 94 )
+
+[node name="LampreyButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_left = 104.0
+margin_top = 624.0
+margin_right = 204.0
+margin_bottom = 724.0
+texture_normal = ExtResource( 50 )
+texture_hover = ExtResource( 51 )
+texture_focused = ExtResource( 12 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/LampreyButton"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -8.0
+margin_top = -2.0
+margin_right = 2.0
+margin_bottom = 8.0
+texture = ExtResource( 94 )
+
+[node name="Spacer" type="Control" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_left = 104.0
+margin_top = 728.0
+margin_right = 204.0
+margin_bottom = 828.0
+rect_min_size = Vector2( 100, 100 )
+
+[node name="SpitterButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_left = 208.0
+margin_right = 308.0
+margin_bottom = 100.0
+texture_normal = ExtResource( 19 )
+texture_hover = ExtResource( 18 )
+texture_focused = ExtResource( 16 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/SpitterButton"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -8.0
+margin_top = -2.0
+margin_right = 2.0
+margin_bottom = 8.0
+texture = ExtResource( 94 )
+
+[node name="BruiserButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_left = 208.0
+margin_top = 104.0
+margin_right = 308.0
+margin_bottom = 204.0
+texture_normal = ExtResource( 86 )
+texture_hover = ExtResource( 68 )
+texture_focused = ExtResource( 83 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/BruiserButton"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -8.0
+margin_top = -2.0
+margin_right = 2.0
+margin_bottom = 8.0
+texture = ExtResource( 94 )
+
+[node name="HealerButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_left = 208.0
+margin_top = 208.0
+margin_right = 308.0
+margin_bottom = 308.0
+texture_normal = ExtResource( 72 )
+texture_hover = ExtResource( 79 )
+texture_focused = ExtResource( 74 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/HealerButton"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -8.0
+margin_top = -2.0
+margin_right = 2.0
+margin_bottom = 8.0
+texture = ExtResource( 94 )
+
+[node name="FinAlienButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_left = 208.0
+margin_top = 312.0
+margin_right = 308.0
+margin_bottom = 412.0
+texture_normal = ExtResource( 59 )
+texture_hover = ExtResource( 54 )
+texture_focused = ExtResource( 55 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/FinAlienButton"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -8.0
+margin_top = -2.0
+margin_right = 2.0
+margin_bottom = 8.0
+texture = ExtResource( 94 )
+
+[node name="HornedBruiserButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_left = 208.0
+margin_top = 416.0
+margin_right = 308.0
+margin_bottom = 516.0
+texture_normal = ExtResource( 65 )
+texture_hover = ExtResource( 60 )
+texture_focused = ExtResource( 66 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/HornedBruiserButton"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -8.0
+margin_top = -2.0
+margin_right = 2.0
+margin_bottom = 8.0
+texture = ExtResource( 94 )
+
+[node name="SlasherButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_left = 208.0
+margin_top = 520.0
+margin_right = 308.0
+margin_bottom = 620.0
+texture_normal = ExtResource( 92 )
+texture_hover = ExtResource( 93 )
+texture_focused = ExtResource( 88 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/SlasherButton"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -8.0
+margin_top = -2.0
+margin_right = 2.0
+margin_bottom = 8.0
+texture = ExtResource( 94 )
+
+[node name="Spacer" type="Control" parent="VBoxContainer/HBoxContainer"]
+margin_left = 312.0
+margin_right = 352.0
+margin_bottom = 850.0
+rect_min_size = Vector2( 40, 0 )
+
+[node name="ElitesBossesButtons" type="VFlowContainer" parent="VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+margin_left = 356.0
+margin_right = 560.0
+margin_bottom = 850.0
+rect_min_size = Vector2( 0, 10 )
+
+[node name="RhinoButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
+margin_right = 100.0
+margin_bottom = 100.0
+texture_normal = ExtResource( 26 )
+texture_hover = ExtResource( 29 )
+texture_focused = ExtResource( 46 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/RhinoButton"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -8.0
+margin_top = -2.0
+margin_right = 2.0
+margin_bottom = 8.0
+texture = ExtResource( 94 )
+
+[node name="MonkButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
+margin_top = 104.0
+margin_right = 100.0
+margin_bottom = 204.0
+texture_normal = ExtResource( 32 )
+texture_hover = ExtResource( 27 )
+texture_focused = ExtResource( 37 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/MonkButton"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -8.0
+margin_top = -2.0
+margin_right = 2.0
+margin_bottom = 8.0
+texture = ExtResource( 94 )
+
+[node name="ColossusButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
+margin_top = 208.0
+margin_right = 100.0
+margin_bottom = 308.0
+texture_normal = ExtResource( 23 )
+texture_hover = ExtResource( 33 )
+texture_focused = ExtResource( 31 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/ColossusButton"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -8.0
+margin_top = -2.0
+margin_right = 2.0
+margin_bottom = 8.0
+texture = ExtResource( 94 )
+
+[node name="MomButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
+margin_top = 312.0
+margin_right = 100.0
+margin_bottom = 412.0
+texture_normal = ExtResource( 21 )
+texture_hover = ExtResource( 42 )
+texture_focused = ExtResource( 44 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/MomButton"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -8.0
+margin_top = -2.0
+margin_right = 2.0
+margin_bottom = 8.0
+texture = ExtResource( 94 )
+
+[node name="Spacer" type="Control" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
+margin_top = 416.0
+margin_right = 100.0
+margin_bottom = 516.0
+rect_min_size = Vector2( 100, 100 )
+
+[node name="PredatorButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
+margin_top = 520.0
+margin_right = 100.0
+margin_bottom = 620.0
+texture_normal = ExtResource( 11 )
+texture_hover = ExtResource( 10 )
+texture_focused = ExtResource( 52 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/PredatorButton"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -8.0
+margin_top = -2.0
+margin_right = 2.0
+margin_bottom = 8.0
+texture = ExtResource( 94 )
+
+[node name="Spacer2" type="Control" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
+margin_top = 624.0
+margin_right = 100.0
+margin_bottom = 724.0
+rect_min_size = Vector2( 100, 100 )
+
+[node name="Spacer3" type="Control" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
+margin_top = 728.0
+margin_right = 100.0
+margin_bottom = 828.0
+rect_min_size = Vector2( 100, 100 )
+
+[node name="ButcherButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
+margin_left = 104.0
+margin_right = 204.0
+margin_bottom = 100.0
+texture_normal = ExtResource( 36 )
+texture_hover = ExtResource( 40 )
+texture_focused = ExtResource( 25 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/ButcherButton"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -8.0
+margin_top = -2.0
+margin_right = 2.0
+margin_bottom = 8.0
+texture = ExtResource( 94 )
+
+[node name="CrocoButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
+margin_left = 104.0
+margin_top = 104.0
+margin_right = 204.0
+margin_bottom = 204.0
+texture_normal = ExtResource( 39 )
+texture_hover = ExtResource( 30 )
+texture_focused = ExtResource( 41 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/CrocoButton"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -8.0
+margin_top = -2.0
+margin_right = 2.0
+margin_bottom = 8.0
+texture = ExtResource( 94 )
+
+[node name="InsectButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
+margin_left = 104.0
+margin_top = 208.0
+margin_right = 204.0
+margin_bottom = 308.0
+texture_normal = ExtResource( 20 )
+texture_hover = ExtResource( 38 )
+texture_focused = ExtResource( 34 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/InsectButton"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -8.0
+margin_top = -2.0
+margin_right = 2.0
+margin_bottom = 8.0
+texture = ExtResource( 94 )
+
+[node name="DemonButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
+margin_left = 104.0
+margin_top = 312.0
+margin_right = 204.0
+margin_bottom = 412.0
+texture_normal = ExtResource( 24 )
+texture_hover = ExtResource( 35 )
+texture_focused = ExtResource( 43 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/DemonButton"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -8.0
+margin_top = -2.0
+margin_right = 2.0
+margin_bottom = 8.0
+texture = ExtResource( 94 )
+
+[node name="Spacer4" type="Control" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
+margin_left = 104.0
+margin_top = 416.0
+margin_right = 204.0
+margin_bottom = 516.0
+rect_min_size = Vector2( 100, 100 )
+
+[node name="InvokerButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
+margin_left = 104.0
+margin_top = 520.0
+margin_right = 204.0
+margin_bottom = 620.0
+texture_normal = ExtResource( 28 )
+texture_hover = ExtResource( 45 )
+texture_focused = ExtResource( 22 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/InvokerButton"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -8.0
+margin_top = -2.0
+margin_right = 2.0
+margin_bottom = 8.0
+texture = ExtResource( 94 )
+
+[node name="AlienFormHolder" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+margin_left = 564.0
+margin_right = 1920.0
+margin_bottom = 850.0
+size_flags_horizontal = 3
+custom_constants/separation = 0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder"]
+margin_right = 1356.0
+margin_bottom = 850.0
+rect_min_size = Vector2( 0, 850 )
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer"]
+margin_left = 68.0
+margin_right = 1287.0
+margin_bottom = 850.0
+rect_min_size = Vector2( 1219, 850 )
+size_flags_horizontal = 6
+
+[node name="AlienFormHolderInner" type="VBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer"]
+unique_name_in_owner = true
+visible = false
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 1254.0
+margin_bottom = 845.0
+
+[node name="Spacer1" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner"]
+margin_right = 1249.0
+margin_bottom = 10.0
+rect_min_size = Vector2( 0, 10 )
+
+[node name="Name" type="Label" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner"]
+unique_name_in_owner = true
+margin_left = 624.0
+margin_top = 14.0
+margin_right = 624.0
+margin_bottom = 59.0
+size_flags_horizontal = 4
+
+[node name="Spacer2" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner"]
+margin_top = 63.0
+margin_right = 1249.0
+margin_bottom = 73.0
+rect_min_size = Vector2( 0, 10 )
+
+[node name="AlienFormWrapper" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner"]
+unique_name_in_owner = true
+margin_top = 77.0
+margin_right = 1249.0
+margin_bottom = 743.0
+alignment = 2
+
+[node name="Labels" type="VBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper"]
+unique_name_in_owner = true
+margin_right = 1015.0
+margin_bottom = 666.0
+
+[node name="BaseHealth" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels"]
+margin_right = 1015.0
+margin_bottom = 54.0
+alignment = 2
+
+[node name="Spacer1" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/BaseHealth"]
+margin_left = 267.0
+margin_right = 287.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/BaseHealth"]
+margin_left = 291.0
+margin_right = 991.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 700, 54 )
+text = "ENEMY_SETTINGS_BASE_HEALTH"
+align = 2
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/BaseHealth/Label"]
+anchor_left = 1.0
+anchor_right = 1.0
+texture = ExtResource( 94 )
+
+[node name="Spacer2" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/BaseHealth"]
+margin_left = 995.0
+margin_right = 1015.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="HealthIncrease" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels"]
+margin_top = 58.0
+margin_right = 1015.0
+margin_bottom = 112.0
+rect_min_size = Vector2( 0, 54 )
+alignment = 2
+
+[node name="Spacer1" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/HealthIncrease"]
+margin_left = 245.0
+margin_right = 265.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/HealthIncrease"]
+margin_left = 269.0
+margin_top = 4.0
+margin_right = 991.0
+margin_bottom = 49.0
+text = "ENEMY_SETTINGS_HEALTH_INCREASE"
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/HealthIncrease/Label"]
+anchor_left = 1.0
+anchor_right = 1.0
+texture = ExtResource( 94 )
+
+[node name="Spacer2" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/HealthIncrease"]
+margin_left = 995.0
+margin_right = 1015.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="Speed" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels"]
+margin_top = 116.0
+margin_right = 1015.0
+margin_bottom = 170.0
+alignment = 2
+
+[node name="Spacer1" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/Speed"]
+margin_left = 481.0
+margin_right = 501.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/Speed"]
+margin_left = 505.0
+margin_right = 991.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 0, 54 )
+text = "ENEMY_SETTINGS_SPEED"
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/Speed/Label"]
+anchor_left = 1.0
+anchor_right = 1.0
+texture = ExtResource( 94 )
+
+[node name="Spacer2" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/Speed"]
+margin_left = 995.0
+margin_right = 1015.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="BaseDamage" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels"]
+margin_top = 174.0
+margin_right = 1015.0
+margin_bottom = 228.0
+alignment = 2
+
+[node name="Spacer1" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/BaseDamage"]
+margin_left = 314.0
+margin_right = 334.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/BaseDamage"]
+margin_left = 338.0
+margin_right = 991.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 0, 54 )
+text = "ENEMY_SETTINGS_BASE_DAMAGE"
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/BaseDamage/Label"]
+anchor_left = 1.0
+anchor_right = 1.0
+texture = ExtResource( 94 )
+
+[node name="Spacer2" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/BaseDamage"]
+margin_left = 995.0
+margin_right = 1015.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="DamageIncrease" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels"]
+margin_top = 232.0
+margin_right = 1015.0
+margin_bottom = 286.0
+alignment = 2
+
+[node name="Spacer1" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/DamageIncrease"]
+margin_left = 228.0
+margin_right = 248.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/DamageIncrease"]
+margin_left = 252.0
+margin_right = 991.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 0, 54 )
+text = "ENEMY_SETTINGS_DAMAGE_INCREASE"
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/DamageIncrease/Label"]
+anchor_left = 1.0
+anchor_right = 1.0
+texture = ExtResource( 94 )
+
+[node name="Spacer2" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/DamageIncrease"]
+margin_left = 995.0
+margin_right = 1015.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="Value" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels"]
+margin_top = 290.0
+margin_right = 1015.0
+margin_bottom = 344.0
+alignment = 2
+
+[node name="Spacer1" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/Value"]
+margin_left = 478.0
+margin_right = 498.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/Value"]
+margin_left = 502.0
+margin_right = 991.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 0, 54 )
+text = "ENEMY_SETTINGS_VALUE"
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/Value/Label"]
+anchor_left = 1.0
+anchor_right = 1.0
+texture = ExtResource( 94 )
+
+[node name="Spacer2" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/Value"]
+margin_left = 995.0
+margin_right = 1015.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="KnockbackResistance" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels"]
+margin_top = 348.0
+margin_right = 1015.0
+margin_bottom = 402.0
+alignment = 2
+
+[node name="Spacer1" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/KnockbackResistance"]
+margin_left = 109.0
+margin_right = 129.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/KnockbackResistance"]
+margin_left = 133.0
+margin_right = 991.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 0, 54 )
+text = "ENEMY_SETTINGS_KNOCKBACK_RESISTANCE"
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/KnockbackResistance/Label"]
+anchor_left = 1.0
+anchor_right = 1.0
+texture = ExtResource( 94 )
+
+[node name="Spacer2" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/KnockbackResistance"]
+margin_left = 995.0
+margin_right = 1015.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="CanDropConsumables" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels"]
+margin_top = 406.0
+margin_right = 1015.0
+margin_bottom = 476.0
+rect_min_size = Vector2( 0, 54 )
+alignment = 2
+
+[node name="Spacer1" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/CanDropConsumables"]
+margin_left = 81.0
+margin_right = 101.0
+margin_bottom = 70.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/CanDropConsumables"]
+margin_left = 105.0
+margin_right = 991.0
+margin_bottom = 70.0
+rect_min_size = Vector2( 0, 70 )
+text = "ENEMY_SETTINGS_CAN_DROP_CONSUMABLES"
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/CanDropConsumables/Label"]
+anchor_left = 1.0
+anchor_right = 1.0
+texture = ExtResource( 94 )
+
+[node name="Spacer2" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/CanDropConsumables"]
+margin_left = 995.0
+margin_right = 1015.0
+margin_bottom = 70.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="AlwaysDropConsumables" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels"]
+margin_top = 480.0
+margin_right = 1015.0
+margin_bottom = 550.0
+alignment = 2
+
+[node name="Spacer1" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/AlwaysDropConsumables"]
+margin_right = 20.0
+margin_bottom = 70.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/AlwaysDropConsumables"]
+margin_left = 24.0
+margin_right = 991.0
+margin_bottom = 70.0
+rect_min_size = Vector2( 0, 70 )
+text = "ENEMY_SETTINGS_ALWAYS_DROP_CONSUMABLES"
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/AlwaysDropConsumables/Label"]
+anchor_left = 1.0
+anchor_right = 1.0
+texture = ExtResource( 94 )
+
+[node name="Spacer2" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/AlwaysDropConsumables"]
+margin_left = 995.0
+margin_right = 1015.0
+margin_bottom = 70.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="BaseDropChance" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels"]
+margin_top = 554.0
+margin_right = 1015.0
+margin_bottom = 608.0
+alignment = 2
+
+[node name="Spacer1" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/BaseDropChance"]
+margin_left = 194.0
+margin_right = 214.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/BaseDropChance"]
+margin_left = 218.0
+margin_right = 991.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 0, 54 )
+text = "ENEMY_SETTINGS_BASE_DROP_CHANCE"
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/BaseDropChance/Label"]
+anchor_left = 1.0
+anchor_right = 1.0
+texture = ExtResource( 94 )
+
+[node name="Spacer2" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/BaseDropChance"]
+margin_left = 995.0
+margin_right = 1015.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="ItemDropChance" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels"]
+margin_top = 612.0
+margin_right = 1015.0
+margin_bottom = 666.0
+rect_min_size = Vector2( 0, 54 )
+alignment = 2
+
+[node name="Spacer1" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/ItemDropChance"]
+margin_left = 204.0
+margin_right = 224.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/ItemDropChance"]
+margin_left = 228.0
+margin_top = 4.0
+margin_right = 991.0
+margin_bottom = 49.0
+text = "ENEMY_SETTINGS_ITEM_DROP_CHANCE"
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/ItemDropChance/Label"]
+anchor_left = 1.0
+anchor_right = 1.0
+texture = ExtResource( 94 )
+
+[node name="Spacer2" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Labels/ItemDropChance"]
+margin_left = 995.0
+margin_right = 1015.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="Inputs" type="VBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper"]
+unique_name_in_owner = true
+margin_left = 1019.0
+margin_right = 1197.0
+margin_bottom = 666.0
+
+[node name="BaseHealth" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs"]
+margin_right = 178.0
+margin_bottom = 54.0
+
+[node name="Spacer2" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/BaseHealth"]
+margin_right = 20.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="SpinBox" type="SpinBox" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/BaseHealth"]
+margin_left = 24.0
+margin_right = 142.0
+margin_bottom = 54.0
+min_value = 1.0
+max_value = 1e+06
+value = 1.0
+
+[node name="Spacer3" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/BaseHealth"]
+margin_left = 146.0
+margin_right = 166.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="HealthIncrease" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs"]
+margin_top = 58.0
+margin_right = 178.0
+margin_bottom = 112.0
+
+[node name="Spacer2" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/HealthIncrease"]
+margin_right = 20.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="SpinBox" type="SpinBox" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/HealthIncrease"]
+margin_left = 24.0
+margin_right = 142.0
+margin_bottom = 54.0
+min_value = 1.0
+max_value = 1e+06
+step = 0.1
+value = 1.0
+
+[node name="Spacer3" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/HealthIncrease"]
+margin_left = 146.0
+margin_right = 166.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="Speed" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs"]
+margin_top = 116.0
+margin_right = 178.0
+margin_bottom = 170.0
+
+[node name="Spacer2" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/Speed"]
+margin_right = 20.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="SpinBox" type="SpinBox" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/Speed"]
+margin_left = 24.0
+margin_right = 142.0
+margin_bottom = 54.0
+min_value = 1.0
+max_value = 1e+06
+value = 1.0
+
+[node name="Spacer3" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/Speed"]
+margin_left = 146.0
+margin_right = 166.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="BaseDamage" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs"]
+margin_top = 174.0
+margin_right = 178.0
+margin_bottom = 228.0
+
+[node name="Spacer2" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/BaseDamage"]
+margin_right = 20.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="SpinBox" type="SpinBox" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/BaseDamage"]
+margin_left = 24.0
+margin_right = 142.0
+margin_bottom = 54.0
+min_value = 1.0
+max_value = 1e+06
+value = 1.0
+
+[node name="Spacer3" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/BaseDamage"]
+margin_left = 146.0
+margin_right = 166.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="DamageIncrease" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs"]
+margin_top = 232.0
+margin_right = 178.0
+margin_bottom = 286.0
+
+[node name="Spacer2" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/DamageIncrease"]
+margin_right = 20.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="SpinBox" type="SpinBox" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/DamageIncrease"]
+margin_left = 24.0
+margin_right = 142.0
+margin_bottom = 54.0
+min_value = 0.01
+max_value = 1e+06
+step = 0.01
+value = 1.0
+
+[node name="Spacer3" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/DamageIncrease"]
+margin_left = 146.0
+margin_right = 166.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="Value" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs"]
+margin_top = 290.0
+margin_right = 178.0
+margin_bottom = 344.0
+
+[node name="Spacer2" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/Value"]
+margin_right = 20.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="SpinBox" type="SpinBox" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/Value"]
+margin_left = 24.0
+margin_right = 142.0
+margin_bottom = 54.0
+min_value = 1.0
+max_value = 1e+06
+value = 1.0
+
+[node name="Spacer3" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/Value"]
+margin_left = 146.0
+margin_right = 166.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="KnockbackResistance" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs"]
+margin_top = 348.0
+margin_right = 178.0
+margin_bottom = 402.0
+
+[node name="Spacer2" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/KnockbackResistance"]
+margin_right = 20.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="SpinBox" type="SpinBox" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/KnockbackResistance"]
+margin_left = 24.0
+margin_right = 142.0
+margin_bottom = 54.0
+min_value = -100.0
+step = 0.1
+value = 1.0
+
+[node name="Spacer3" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/KnockbackResistance"]
+margin_left = 146.0
+margin_right = 166.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="CanDropConsumables" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs"]
+margin_top = 406.0
+margin_right = 178.0
+margin_bottom = 476.0
+
+[node name="Spacer2" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/CanDropConsumables"]
+margin_right = 20.0
+margin_bottom = 70.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="CheckButton" type="CheckButton" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/CanDropConsumables"]
+margin_left = 24.0
+margin_right = 154.0
+margin_bottom = 70.0
+
+[node name="Spacer3" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/CanDropConsumables"]
+margin_left = 158.0
+margin_right = 178.0
+margin_bottom = 70.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="AlwaysDropConsumables" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs"]
+margin_top = 480.0
+margin_right = 178.0
+margin_bottom = 550.0
+
+[node name="Spacer2" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/AlwaysDropConsumables"]
+margin_right = 20.0
+margin_bottom = 70.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="CheckButton" type="CheckButton" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/AlwaysDropConsumables"]
+margin_left = 24.0
+margin_right = 154.0
+margin_bottom = 70.0
+
+[node name="Spacer3" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/AlwaysDropConsumables"]
+margin_left = 158.0
+margin_right = 178.0
+margin_bottom = 70.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="BaseDropChance" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs"]
+margin_top = 554.0
+margin_right = 178.0
+margin_bottom = 608.0
+
+[node name="Spacer2" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/BaseDropChance"]
+margin_right = 20.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="SpinBox" type="SpinBox" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/BaseDropChance"]
+margin_left = 24.0
+margin_right = 142.0
+margin_bottom = 54.0
+min_value = 1.0
+value = 1.0
+
+[node name="Spacer3" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/BaseDropChance"]
+margin_left = 146.0
+margin_right = 166.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="ItemDropChance" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs"]
+margin_top = 612.0
+margin_right = 178.0
+margin_bottom = 666.0
+
+[node name="Spacer2" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/ItemDropChance"]
+margin_right = 20.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="SpinBox" type="SpinBox" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/ItemDropChance"]
+margin_left = 24.0
+margin_right = 142.0
+margin_bottom = 54.0
+min_value = 1.0
+value = 1.0
+
+[node name="Spacer3" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/ItemDropChance"]
+margin_left = 146.0
+margin_right = 166.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="Defaults" type="VBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper"]
+unique_name_in_owner = true
+margin_left = 1201.0
+margin_right = 1249.0
+margin_bottom = 666.0
+
+[node name="BaseHealth" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults"]
+margin_right = 48.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 0, 54 )
+
+[node name="Spacer3" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/BaseHealth"]
+margin_right = 20.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="Initial" type="Label" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/BaseHealth"]
+margin_left = 24.0
+margin_top = 4.0
+margin_right = 24.0
+margin_bottom = 49.0
+
+[node name="Spacer4" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/BaseHealth"]
+margin_left = 28.0
+margin_right = 48.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="HealthIncrease" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults"]
+margin_top = 58.0
+margin_right = 48.0
+margin_bottom = 112.0
+rect_min_size = Vector2( 0, 54 )
+
+[node name="Spacer3" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/HealthIncrease"]
+margin_right = 20.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="Initial" type="Label" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/HealthIncrease"]
+margin_left = 24.0
+margin_top = 4.0
+margin_right = 24.0
+margin_bottom = 49.0
+
+[node name="Spacer4" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/HealthIncrease"]
+margin_left = 28.0
+margin_right = 48.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="Speed" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults"]
+margin_top = 116.0
+margin_right = 48.0
+margin_bottom = 170.0
+rect_min_size = Vector2( 0, 54 )
+
+[node name="Spacer3" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/Speed"]
+margin_right = 20.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="Initial" type="Label" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/Speed"]
+margin_left = 24.0
+margin_top = 4.0
+margin_right = 24.0
+margin_bottom = 49.0
+
+[node name="Spacer4" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/Speed"]
+margin_left = 28.0
+margin_right = 48.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="BaseDamage" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults"]
+margin_top = 174.0
+margin_right = 48.0
+margin_bottom = 228.0
+rect_min_size = Vector2( 0, 54 )
+
+[node name="Spacer3" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/BaseDamage"]
+margin_right = 20.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="Initial" type="Label" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/BaseDamage"]
+margin_left = 24.0
+margin_top = 4.0
+margin_right = 24.0
+margin_bottom = 49.0
+
+[node name="Spacer4" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/BaseDamage"]
+margin_left = 28.0
+margin_right = 48.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="DamageIncrease" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults"]
+margin_top = 232.0
+margin_right = 48.0
+margin_bottom = 286.0
+rect_min_size = Vector2( 0, 54 )
+
+[node name="Spacer3" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/DamageIncrease"]
+margin_right = 20.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="Initial" type="Label" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/DamageIncrease"]
+margin_left = 24.0
+margin_top = 4.0
+margin_right = 24.0
+margin_bottom = 49.0
+
+[node name="Spacer4" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/DamageIncrease"]
+margin_left = 28.0
+margin_right = 48.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="Value" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults"]
+margin_top = 290.0
+margin_right = 48.0
+margin_bottom = 344.0
+rect_min_size = Vector2( 0, 54 )
+
+[node name="Spacer3" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/Value"]
+margin_right = 20.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="Initial" type="Label" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/Value"]
+margin_left = 24.0
+margin_top = 4.0
+margin_right = 24.0
+margin_bottom = 49.0
+
+[node name="Spacer4" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/Value"]
+margin_left = 28.0
+margin_right = 48.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="KnockbackResistance" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults"]
+margin_top = 348.0
+margin_right = 48.0
+margin_bottom = 402.0
+rect_min_size = Vector2( 0, 54 )
+
+[node name="Spacer3" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/KnockbackResistance"]
+margin_right = 20.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="Initial" type="Label" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/KnockbackResistance"]
+margin_left = 24.0
+margin_top = 4.0
+margin_right = 24.0
+margin_bottom = 49.0
+
+[node name="Spacer4" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/KnockbackResistance"]
+margin_left = 28.0
+margin_right = 48.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="CanDropConsumables" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults"]
+margin_top = 406.0
+margin_right = 48.0
+margin_bottom = 476.0
+rect_min_size = Vector2( 0, 70 )
+
+[node name="Spacer3" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/CanDropConsumables"]
+margin_right = 20.0
+margin_bottom = 70.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="Initial" type="Label" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/CanDropConsumables"]
+margin_left = 24.0
+margin_top = 12.0
+margin_right = 24.0
+margin_bottom = 57.0
+
+[node name="Spacer4" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/CanDropConsumables"]
+margin_left = 28.0
+margin_right = 48.0
+margin_bottom = 70.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="AlwaysDropConsumables" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults"]
+margin_top = 480.0
+margin_right = 48.0
+margin_bottom = 550.0
+rect_min_size = Vector2( 0, 70 )
+
+[node name="Spacer3" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/AlwaysDropConsumables"]
+margin_right = 20.0
+margin_bottom = 70.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="Initial" type="Label" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/AlwaysDropConsumables"]
+margin_left = 24.0
+margin_top = 12.0
+margin_right = 24.0
+margin_bottom = 57.0
+
+[node name="Spacer4" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/AlwaysDropConsumables"]
+margin_left = 28.0
+margin_right = 48.0
+margin_bottom = 70.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="BaseDropChance" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults"]
+margin_top = 554.0
+margin_right = 48.0
+margin_bottom = 608.0
+rect_min_size = Vector2( 0, 54 )
+
+[node name="Spacer3" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/BaseDropChance"]
+margin_right = 20.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="Initial" type="Label" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/BaseDropChance"]
+margin_left = 24.0
+margin_top = 4.0
+margin_right = 24.0
+margin_bottom = 49.0
+
+[node name="Spacer4" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/BaseDropChance"]
+margin_left = 28.0
+margin_right = 48.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="ItemDropChance" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults"]
+margin_top = 612.0
+margin_right = 48.0
+margin_bottom = 666.0
+rect_min_size = Vector2( 0, 54 )
+
+[node name="Spacer3" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/ItemDropChance"]
+margin_right = 20.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="Initial" type="Label" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/ItemDropChance"]
+margin_left = 24.0
+margin_top = 4.0
+margin_right = 24.0
+margin_bottom = 49.0
+
+[node name="Spacer4" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Defaults/ItemDropChance"]
+margin_left = 28.0
+margin_right = 48.0
+margin_bottom = 54.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="Spacer3" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner"]
+margin_top = 747.0
+margin_right = 1249.0
+margin_bottom = 757.0
+rect_min_size = Vector2( 0, 10 )
+
+[node name="SettingsControls" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner"]
+margin_top = 761.0
+margin_right = 1249.0
+margin_bottom = 826.0
+alignment = 2
+
+[node name="Spacer1" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/SettingsControls"]
+margin_left = 689.0
+margin_right = 709.0
+margin_bottom = 65.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="ResetButton" type="Button" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/SettingsControls"]
+unique_name_in_owner = true
+visible = false
+margin_left = 159.0
+margin_right = 674.0
+margin_bottom = 65.0
+size_flags_horizontal = 4
+text = "ENEMY_SETTINGS_RESET"
+
+[node name="Spacer2" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/SettingsControls"]
+margin_left = 713.0
+margin_right = 733.0
+margin_bottom = 65.0
+rect_min_size = Vector2( 20, 0 )
+
+[node name="ApplyButton" type="Button" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/SettingsControls"]
+unique_name_in_owner = true
+margin_left = 737.0
+margin_right = 1235.0
+margin_bottom = 65.0
+size_flags_horizontal = 4
+text = "ENEMY_SETTINGS_SAVE"
+
+[node name="Spacer3" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/SettingsControls"]
+margin_left = 1239.0
+margin_right = 1249.0
+margin_bottom = 65.0
+rect_min_size = Vector2( 10, 0 )
+
+[node name="BackButton" type="Button" parent="VBoxContainer"]
+unique_name_in_owner = true
+margin_left = 826.0
+margin_top = 975.0
+margin_right = 1093.0
+margin_bottom = 1040.0
+size_flags_horizontal = 4
+text = "MENU_BACK"
+script = ExtResource( 2 )
+
+[connection signal="pressed" from="VBoxContainer/BackButton" to="VBoxContainer" method="_on_BackButton_pressed"]
