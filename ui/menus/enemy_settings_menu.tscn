@@ -93,7 +93,7 @@
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/023/enemy_settings_slasher_egg_active.png" type="Texture" id=91]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/024/enemy_settings_slasher.png" type="Texture" id=92]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/024/enemy_settings_slasher_hover.png" type="Texture" id=93]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/menus/dot.png" type="Texture" id=94]
+[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/menus/enemy_settings_dot.png" type="Texture" id=94]
 
 [node name="MenuEnemySettings" type="MarginContainer"]
 anchor_right = 1.0
@@ -1159,7 +1159,6 @@ rect_min_size = Vector2( 20, 0 )
 margin_left = 24.0
 margin_right = 142.0
 margin_bottom = 54.0
-min_value = 1.0
 max_value = 1e+06
 value = 1.0
 
@@ -1624,34 +1623,14 @@ margin_right = 1249.0
 margin_bottom = 826.0
 alignment = 2
 
-[node name="Spacer1" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/SettingsControls"]
-margin_left = 689.0
-margin_right = 709.0
-margin_bottom = 65.0
-rect_min_size = Vector2( 20, 0 )
-
 [node name="ResetButton" type="Button" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/SettingsControls"]
 unique_name_in_owner = true
 visible = false
-margin_left = 159.0
-margin_right = 674.0
-margin_bottom = 65.0
-size_flags_horizontal = 4
-text = "ENEMY_SETTINGS_RESET"
-
-[node name="Spacer2" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/SettingsControls"]
-margin_left = 713.0
-margin_right = 733.0
-margin_bottom = 65.0
-rect_min_size = Vector2( 20, 0 )
-
-[node name="ApplyButton" type="Button" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/SettingsControls"]
-unique_name_in_owner = true
-margin_left = 737.0
+margin_left = 720.0
 margin_right = 1235.0
 margin_bottom = 65.0
 size_flags_horizontal = 4
-text = "ENEMY_SETTINGS_SAVE"
+text = "ENEMY_SETTINGS_RESET"
 
 [node name="Spacer3" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/SettingsControls"]
 margin_left = 1239.0

@@ -182,9 +182,12 @@ func init():
 			elites_bosses_buttons.get_node(elite_boss.name.replace(" ","")+"Button/IsModified").visible = true
 		else: 
 			elites_bosses_buttons.get_node(elite_boss.name.replace(" ","")+"Button/IsModified").visible = false
-			
-	save_button.connect("pressed", self, "_on_save_button_pressed")
+
 	reset_button.connect("pressed", self, "_on_reset_button_pressed")
+	
+	for single_stat in stats_to_manipulate:
+		alien_info_wrapper.get_node("Inputs/"+single_stat.selector+"/"+single_stat.type).connect("value_changed", self, "_save_single_value", [single_stat.stat]);
+		alien_info_wrapper.get_node("Inputs/"+single_stat.selector+"/"+single_stat.type).connect("toggled", self, "_save_single_value", [single_stat.stat]);
 
 
 func _on_enemy_button_pressed(name, alienid):
@@ -220,8 +223,6 @@ func _on_enemy_button_pressed(name, alienid):
 	alien_form.visible = true
 	if _alien_was_modified(alienid):
 		reset_button.visible = true
-
-func _on_save_button_pressed():
 	
 	var alien_data = load("res://entities/units/enemies/"+current_selected_alien+"/"+str(int(current_selected_alien))+"_stats.tres")
 	
@@ -260,7 +261,36 @@ func _on_save_button_pressed():
 		
 	
 	_enemy_settings_save_data()
+
+func _save_single_value(value, stat):
+	var alien_data = load("res://entities/units/enemies/"+current_selected_alien+"/"+str(int(current_selected_alien))+"_stats.tres")
 	
+	if !current_selected_alien in enemy_settings_save_data:
+		enemy_settings_save_data[current_selected_alien] = {}
+	if (stat == "base_drop_chance" or stat == "item_drop_chance"):
+		value = value/100
+
+	alien_data[stat] = value
+	enemy_settings_save_data[current_selected_alien][stat] = value
+		
+	var alien_button_ismod = alien_buttons.get_node(current_selected_alien_name.replace(" ","")+"Button/IsModified")
+	var elite_boss_button_ismod = elites_bosses_buttons.get_node(current_selected_alien_name.replace(" ","")+"Button/IsModified")
+	var alien_was_modified = _alien_was_modified(current_selected_alien)
+	if (alien_button_ismod != null):
+		if alien_was_modified:
+			alien_button_ismod.visible = true
+		else: 
+			alien_button_ismod.visible = false
+	if (elite_boss_button_ismod != null):
+		if alien_was_modified:
+			elite_boss_button_ismod.visible = true
+		else: 
+			elite_boss_button_ismod.visible = false
+			
+	if alien_was_modified:
+		reset_button.visible = true
+		
+		
 func _on_reset_button_pressed():
 	var alien_data = load("res://entities/units/enemies/"+current_selected_alien+"/"+str(int(current_selected_alien))+"_stats.tres")
 	var default_data = load("res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/"+current_selected_alien+"/init_"+str(int(current_selected_alien))+"_stats.tres");
@@ -292,7 +322,7 @@ func _alien_was_modified(number):
 			var visibleDot = false
 			var labelDot = alien_info_wrapper.get_node("Labels/"+single_stat.selector+"/Label/IsModified")
 			if single_stat.stat in enemy_settings_save_data[number]:
-				if enemy_settings_save_data[number][single_stat.stat] != base_stats[single_stat.stat]:
+				if str(enemy_settings_save_data[number][single_stat.stat]) != str(base_stats[single_stat.stat]):
 					isModified = true
 					visibleDot = true
 			if visibleDot:
@@ -321,6 +351,7 @@ func _enemy_settings_load_data():
 	file.close()
 
 func _on_BackButton_pressed():
+	_on_enemy_button_pressed("Baby Alien", "001")
 	alien_form.visible = false
 	reset_button.visible = false
 	emit_signal("back_button_pressed")
