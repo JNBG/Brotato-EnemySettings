@@ -154,7 +154,6 @@ signal back_button_pressed
 onready var back_button = $"%BackButton"
 onready var alien_form = $"%AlienFormHolderInner"
 onready var alien_info_wrapper = $"%AlienFormWrapper"
-onready var save_button = $"%ApplyButton"
 onready var reset_button = $"%ResetButton"
 onready var alien_name = $"%Name"
 onready var alien_buttons = $"%AlienButtons"
