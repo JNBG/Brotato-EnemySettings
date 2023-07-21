@@ -1,98 +1,38 @@
-[gd_scene load_steps=95 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/extensions/ui/menus/pages/menu_enemy_settings_options.gd" type="Script" id=1]
 [ext_resource path="res://ui/menus/global/my_menu_button.gd" type="Script" id=2]
 [ext_resource path="res://resources/themes/base_theme.tres" type="Theme" id=3]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/001/enemy_settings_baby_alien.png" type="Texture" id=4]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/001/enemy_settings_baby_alien_hover.png" type="Texture" id=5]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/001/enemy_settings_baby_alien_active.png" type="Texture" id=6]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/002/enemy_settings_chaser.png" type="Texture" id=7]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/002/enemy_settings_chaser_hover.png" type="Texture" id=8]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/002/enemy_settings_chaser_active.png" type="Texture" id=9]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/010/enemy_settings_predator_hover.png" type="Texture" id=10]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/010/enemy_settings_predator.png" type="Texture" id=11]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/026/enemy_settings_lamprey_active.png" type="Texture" id=12]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/019/enemy_settings_horned_charger.png" type="Texture" id=13]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/004/enemy_settings_charger_hover.png" type="Texture" id=14]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/004/enemy_settings_charger_active.png" type="Texture" id=15]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/003/enemy_settings_spitter_active.png" type="Texture" id=16]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/004/enemy_settings_charger.png" type="Texture" id=17]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/003/enemy_settings_spitter_hover.png" type="Texture" id=18]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/003/enemy_settings_spitter.png" type="Texture" id=19]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/032/enemy_settings_insect.png" type="Texture" id=20]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/033/enemy_settings_mom.png" type="Texture" id=21]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/011/enemy_settings_invoker_active.png" type="Texture" id=22]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/028/enemy_settings_colossus.png" type="Texture" id=23]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/034/enemy_settings_demon.png" type="Texture" id=24]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/021/enemy_settings_butcher_activepng.png" type="Texture" id=25]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/020/enemy_settings_rhino.png" type="Texture" id=26]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/022/enemy_settings_monk_hover.png" type="Texture" id=27]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/011/enemy_settings_invoker.png" type="Texture" id=28]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/020/enemy_settings_rhino_hover.png" type="Texture" id=29]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/027/enemy_settings_croco_hover.png" type="Texture" id=30]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/028/enemy_settings_colossus_active.png" type="Texture" id=31]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/022/enemy_settings_monk.png" type="Texture" id=32]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/028/enemy_settings_colossus_hover.png" type="Texture" id=33]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/032/enemy_settings_insect_active.png" type="Texture" id=34]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/034/enemy_settings_demon_hover.png" type="Texture" id=35]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/021/enemy_settings_butcher.png" type="Texture" id=36]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/022/enemy_settings_monk_active.png" type="Texture" id=37]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/032/enemy_settings_insect_hover.png" type="Texture" id=38]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/027/enemy_settings_croco.png" type="Texture" id=39]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/021/enemy_settings_butcher_hover.png" type="Texture" id=40]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/027/enemy_settings_croco_active.png" type="Texture" id=41]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/033/enemy_settings_mom_hover.png" type="Texture" id=42]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/034/enemy_settings_demon_active.png" type="Texture" id=43]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/033/enemy_settings_mom_active.png" type="Texture" id=44]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/011/enemy_settings_invoker_hover.png" type="Texture" id=45]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/020/enemy_settings_rhino_active.png" type="Texture" id=46]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/025/enemy_settings_tentacle.png" type="Texture" id=47]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/025/enemy_settings_tentacle_hover.png" type="Texture" id=48]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/025/enemy_settings_tentacle_active.png" type="Texture" id=49]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/026/enemy_settings_lamprey.png" type="Texture" id=50]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/026/enemy_settings_lamprey_hover.png" type="Texture" id=51]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/010/enemy_settings_predator_active.png" type="Texture" id=52]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/017/enemy_settings_junkie.png" type="Texture" id=53]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/015/enemy_settings_fin_alien_hover.png" type="Texture" id=54]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/015/enemy_settings_fin_alien_active.png" type="Texture" id=55]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/016/enemy_settings_spawner_hover.png" type="Texture" id=56]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/017/enemy_settings_junkie_active.png" type="Texture" id=57]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/014/enemy_settings_helmet_alien_active.png" type="Texture" id=58]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/015/enemy_settings_fin_alien.png" type="Texture" id=59]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/018/enemy_settings_horned_bruiser_hover.png" type="Texture" id=60]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/019/enemy_settings_horned_charger_hover.png" type="Texture" id=61]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/016/enemy_settings_spawner_active.png" type="Texture" id=62]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/016/enemy_settings_spawner.png" type="Texture" id=63]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/017/enemy_settings_junkie_hover.png" type="Texture" id=64]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/018/enemy_settings_horned_bruiser.png" type="Texture" id=65]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/018/enemy_settings_horned_bruiser_active.png" type="Texture" id=66]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/005/enemy_settings_pursuer_active.png" type="Texture" id=67]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/006/enemy_settings_bruiser_hover.png" type="Texture" id=68]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/007/enemy_settings_buffer.png" type="Texture" id=69]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/007/enemy_settings_buffer_hover.png" type="Texture" id=70]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/007/enemy_settings_buffer_active.png" type="Texture" id=71]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/012/enemy_settings_healer.png" type="Texture" id=72]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/008/enemy_settings_fly_active.png" type="Texture" id=73]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/012/enemy_settings_healer_active.png" type="Texture" id=74]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/013/enemy_settings_looter.png" type="Texture" id=75]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/013/enemy_settings_looter_active.png" type="Texture" id=76]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/014/enemy_settings_helmet_alien.png" type="Texture" id=77]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/005/enemy_settings_pursuer_hover.png" type="Texture" id=78]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/012/enemy_settings_healer_hover.png" type="Texture" id=79]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/013/enemy_settings_looter_hover.png" type="Texture" id=80]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/014/enemy_settings_helmet_alien_hover.png" type="Texture" id=81]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/005/enemy_settings_pursuer.png" type="Texture" id=82]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/006/enemy_settings_bruiser_active.png" type="Texture" id=83]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/008/enemy_settings_fly.png" type="Texture" id=84]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/008/enemy_settings_fly_hover.png" type="Texture" id=85]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/006/enemy_settings_bruiser.png" type="Texture" id=86]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/023/enemy_settings_slasher_egg.png" type="Texture" id=87]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/024/enemy_settings_slasher_active.png" type="Texture" id=88]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/019/enemy_settings_horned_charger_active.png" type="Texture" id=89]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/023/enemy_settings_slasher_egg_hover.png" type="Texture" id=90]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/023/enemy_settings_slasher_egg_active.png" type="Texture" id=91]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/024/enemy_settings_slasher.png" type="Texture" id=92]
-[ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/024/enemy_settings_slasher_hover.png" type="Texture" id=93]
 [ext_resource path="res://mods-unpacked/MincedMeatMole-EnemySettings/ui/menus/enemy_settings_dot.png" type="Texture" id=94]
 
 [node name="MenuEnemySettings" type="MarginContainer"]
@@ -109,30 +49,35 @@ custom_constants/separation = 20
 alignment = 1
 
 [node name="Headline" type="Label" parent="VBoxContainer"]
-margin_top = 40.0
+margin_top = 16.0
 margin_right = 1920.0
-margin_bottom = 85.0
+margin_bottom = 61.0
 text = "ENEMY_SETTINGS_HEADLINE"
 align = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
-margin_top = 105.0
+margin_top = 81.0
 margin_right = 1920.0
-margin_bottom = 955.0
+margin_bottom = 979.0
+rect_min_size = Vector2( 0, 898 )
 
 [node name="AlienButtons" type="VFlowContainer" parent="VBoxContainer/HBoxContainer"]
 unique_name_in_owner = true
-margin_right = 308.0
-margin_bottom = 850.0
+margin_right = 338.0
+margin_bottom = 898.0
 
-[node name="BabyAlienButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
-margin_right = 100.0
-margin_bottom = 100.0
+[node name="BabyAlienPanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_right = 110.0
+margin_bottom = 110.0
+
+[node name="Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons/BabyAlienPanel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 105.0
+margin_bottom = 105.0
 texture_normal = ExtResource( 4 )
-texture_hover = ExtResource( 5 )
-texture_focused = ExtResource( 6 )
 
-[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/BabyAlienButton"]
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/BabyAlienPanel/Button"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -8.0
@@ -141,15 +86,19 @@ margin_right = 2.0
 margin_bottom = 8.0
 texture = ExtResource( 94 )
 
-[node name="ChargerButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
-margin_top = 104.0
-margin_right = 100.0
-margin_bottom = 204.0
+[node name="ChargerPanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_top = 114.0
+margin_right = 110.0
+margin_bottom = 224.0
+
+[node name="Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons/ChargerPanel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 105.0
+margin_bottom = 105.0
 texture_normal = ExtResource( 17 )
-texture_hover = ExtResource( 14 )
-texture_focused = ExtResource( 15 )
 
-[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/ChargerButton"]
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/ChargerPanel/Button"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -8.0
@@ -158,16 +107,20 @@ margin_right = 2.0
 margin_bottom = 8.0
 texture = ExtResource( 94 )
 
-[node name="BufferButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
-margin_top = 208.0
-margin_right = 100.0
-margin_bottom = 308.0
+[node name="BufferPanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_top = 228.0
+margin_right = 110.0
+margin_bottom = 338.0
+
+[node name="Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons/BufferPanel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 105.0
+margin_bottom = 105.0
 rect_pivot_offset = Vector2( -1749, 21 )
 texture_normal = ExtResource( 69 )
-texture_hover = ExtResource( 70 )
-texture_focused = ExtResource( 71 )
 
-[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/BufferButton"]
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/BufferPanel/Button"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -8.0
@@ -176,15 +129,19 @@ margin_right = 2.0
 margin_bottom = 8.0
 texture = ExtResource( 94 )
 
-[node name="LooterButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
-margin_top = 312.0
-margin_right = 100.0
-margin_bottom = 412.0
+[node name="LooterPanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_top = 342.0
+margin_right = 110.0
+margin_bottom = 452.0
+
+[node name="Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons/LooterPanel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 105.0
+margin_bottom = 105.0
 texture_normal = ExtResource( 75 )
-texture_hover = ExtResource( 80 )
-texture_focused = ExtResource( 76 )
 
-[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/LooterButton"]
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/LooterPanel/Button"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -8.0
@@ -193,15 +150,19 @@ margin_right = 2.0
 margin_bottom = 8.0
 texture = ExtResource( 94 )
 
-[node name="SpawnerButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
-margin_top = 416.0
-margin_right = 100.0
-margin_bottom = 516.0
+[node name="SpawnerPanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_top = 456.0
+margin_right = 110.0
+margin_bottom = 566.0
+
+[node name="Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons/SpawnerPanel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 105.0
+margin_bottom = 105.0
 texture_normal = ExtResource( 63 )
-texture_hover = ExtResource( 56 )
-texture_focused = ExtResource( 62 )
 
-[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/SpawnerButton"]
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/SpawnerPanel/Button"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -8.0
@@ -210,15 +171,19 @@ margin_right = 2.0
 margin_bottom = 8.0
 texture = ExtResource( 94 )
 
-[node name="HornedChargerButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
-margin_top = 520.0
-margin_right = 100.0
-margin_bottom = 620.0
+[node name="HornedChargerPanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_top = 570.0
+margin_right = 110.0
+margin_bottom = 680.0
+
+[node name="Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons/HornedChargerPanel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 105.0
+margin_bottom = 105.0
 texture_normal = ExtResource( 13 )
-texture_hover = ExtResource( 61 )
-texture_focused = ExtResource( 89 )
 
-[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/HornedChargerButton"]
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/HornedChargerPanel/Button"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -8.0
@@ -227,15 +192,19 @@ margin_right = 2.0
 margin_bottom = 8.0
 texture = ExtResource( 94 )
 
-[node name="TentacleButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
-margin_top = 624.0
-margin_right = 100.0
-margin_bottom = 724.0
-texture_normal = ExtResource( 47 )
-texture_hover = ExtResource( 48 )
-texture_focused = ExtResource( 49 )
+[node name="TentaclePanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_top = 684.0
+margin_right = 110.0
+margin_bottom = 794.0
 
-[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/TentacleButton"]
+[node name="Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons/TentaclePanel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 105.0
+margin_bottom = 105.0
+texture_normal = ExtResource( 47 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/TentaclePanel/Button"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -8.0
@@ -245,20 +214,24 @@ margin_bottom = 8.0
 texture = ExtResource( 94 )
 
 [node name="Spacer2" type="Control" parent="VBoxContainer/HBoxContainer/AlienButtons"]
-margin_top = 728.0
-margin_right = 100.0
-margin_bottom = 828.0
+margin_top = 798.0
+margin_right = 110.0
+margin_bottom = 898.0
 rect_min_size = Vector2( 100, 100 )
 
-[node name="ChaserButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
-margin_left = 104.0
-margin_right = 204.0
-margin_bottom = 100.0
+[node name="ChaserPanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_left = 114.0
+margin_right = 224.0
+margin_bottom = 110.0
+
+[node name="Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons/ChaserPanel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 105.0
+margin_bottom = 105.0
 texture_normal = ExtResource( 7 )
-texture_hover = ExtResource( 8 )
-texture_focused = ExtResource( 9 )
 
-[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/ChaserButton"]
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/ChaserPanel/Button"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -8.0
@@ -267,16 +240,20 @@ margin_right = 2.0
 margin_bottom = 8.0
 texture = ExtResource( 94 )
 
-[node name="PursuerButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
-margin_left = 104.0
-margin_top = 104.0
-margin_right = 204.0
-margin_bottom = 204.0
+[node name="PursuerPanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_left = 114.0
+margin_top = 114.0
+margin_right = 224.0
+margin_bottom = 224.0
+
+[node name="Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons/PursuerPanel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 105.0
+margin_bottom = 105.0
 texture_normal = ExtResource( 82 )
-texture_hover = ExtResource( 78 )
-texture_focused = ExtResource( 67 )
 
-[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/PursuerButton"]
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/PursuerPanel/Button"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -8.0
@@ -285,16 +262,20 @@ margin_right = 2.0
 margin_bottom = 8.0
 texture = ExtResource( 94 )
 
-[node name="FlyButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
-margin_left = 104.0
-margin_top = 208.0
-margin_right = 204.0
-margin_bottom = 308.0
+[node name="FlyPanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_left = 114.0
+margin_top = 228.0
+margin_right = 224.0
+margin_bottom = 338.0
+
+[node name="Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons/FlyPanel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 105.0
+margin_bottom = 105.0
 texture_normal = ExtResource( 84 )
-texture_hover = ExtResource( 85 )
-texture_focused = ExtResource( 73 )
 
-[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/FlyButton"]
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/FlyPanel/Button"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -8.0
@@ -303,16 +284,20 @@ margin_right = 2.0
 margin_bottom = 8.0
 texture = ExtResource( 94 )
 
-[node name="HelmetAlienButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
-margin_left = 104.0
-margin_top = 312.0
-margin_right = 204.0
-margin_bottom = 412.0
+[node name="HelmetAlienPanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_left = 114.0
+margin_top = 342.0
+margin_right = 224.0
+margin_bottom = 452.0
+
+[node name="Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons/HelmetAlienPanel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 105.0
+margin_bottom = 105.0
 texture_normal = ExtResource( 77 )
-texture_hover = ExtResource( 81 )
-texture_focused = ExtResource( 58 )
 
-[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/HelmetAlienButton"]
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/HelmetAlienPanel/Button"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -8.0
@@ -321,16 +306,20 @@ margin_right = 2.0
 margin_bottom = 8.0
 texture = ExtResource( 94 )
 
-[node name="JunkieButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
-margin_left = 104.0
-margin_top = 416.0
-margin_right = 204.0
-margin_bottom = 516.0
+[node name="JunkiePanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_left = 114.0
+margin_top = 456.0
+margin_right = 224.0
+margin_bottom = 566.0
+
+[node name="Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons/JunkiePanel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 105.0
+margin_bottom = 105.0
 texture_normal = ExtResource( 53 )
-texture_hover = ExtResource( 64 )
-texture_focused = ExtResource( 57 )
 
-[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/JunkieButton"]
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/JunkiePanel/Button"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -8.0
@@ -339,16 +328,20 @@ margin_right = 2.0
 margin_bottom = 8.0
 texture = ExtResource( 94 )
 
-[node name="SlasherEggButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
-margin_left = 104.0
-margin_top = 520.0
-margin_right = 204.0
-margin_bottom = 620.0
+[node name="SlasherEggPanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_left = 114.0
+margin_top = 570.0
+margin_right = 224.0
+margin_bottom = 680.0
+
+[node name="Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons/SlasherEggPanel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 105.0
+margin_bottom = 105.0
 texture_normal = ExtResource( 87 )
-texture_hover = ExtResource( 90 )
-texture_focused = ExtResource( 91 )
 
-[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/SlasherEggButton"]
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/SlasherEggPanel/Button"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -8.0
@@ -357,16 +350,20 @@ margin_right = 2.0
 margin_bottom = 8.0
 texture = ExtResource( 94 )
 
-[node name="LampreyButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
-margin_left = 104.0
-margin_top = 624.0
-margin_right = 204.0
-margin_bottom = 724.0
-texture_normal = ExtResource( 50 )
-texture_hover = ExtResource( 51 )
-texture_focused = ExtResource( 12 )
+[node name="LampreyPanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_left = 114.0
+margin_top = 684.0
+margin_right = 224.0
+margin_bottom = 794.0
 
-[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/LampreyButton"]
+[node name="Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons/LampreyPanel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 105.0
+margin_bottom = 105.0
+texture_normal = ExtResource( 50 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/LampreyPanel/Button"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -8.0
@@ -376,21 +373,25 @@ margin_bottom = 8.0
 texture = ExtResource( 94 )
 
 [node name="Spacer" type="Control" parent="VBoxContainer/HBoxContainer/AlienButtons"]
-margin_left = 104.0
-margin_top = 728.0
-margin_right = 204.0
-margin_bottom = 828.0
+margin_left = 114.0
+margin_top = 798.0
+margin_right = 224.0
+margin_bottom = 898.0
 rect_min_size = Vector2( 100, 100 )
 
-[node name="SpitterButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
-margin_left = 208.0
-margin_right = 308.0
-margin_bottom = 100.0
+[node name="SpitterPanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_left = 228.0
+margin_right = 338.0
+margin_bottom = 110.0
+
+[node name="Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons/SpitterPanel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 105.0
+margin_bottom = 105.0
 texture_normal = ExtResource( 19 )
-texture_hover = ExtResource( 18 )
-texture_focused = ExtResource( 16 )
 
-[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/SpitterButton"]
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/SpitterPanel/Button"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -8.0
@@ -399,16 +400,20 @@ margin_right = 2.0
 margin_bottom = 8.0
 texture = ExtResource( 94 )
 
-[node name="BruiserButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
-margin_left = 208.0
-margin_top = 104.0
-margin_right = 308.0
-margin_bottom = 204.0
+[node name="BruiserPanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_left = 228.0
+margin_top = 114.0
+margin_right = 338.0
+margin_bottom = 224.0
+
+[node name="Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons/BruiserPanel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 105.0
+margin_bottom = 105.0
 texture_normal = ExtResource( 86 )
-texture_hover = ExtResource( 68 )
-texture_focused = ExtResource( 83 )
 
-[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/BruiserButton"]
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/BruiserPanel/Button"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -8.0
@@ -417,16 +422,20 @@ margin_right = 2.0
 margin_bottom = 8.0
 texture = ExtResource( 94 )
 
-[node name="HealerButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
-margin_left = 208.0
-margin_top = 208.0
-margin_right = 308.0
-margin_bottom = 308.0
+[node name="HealerPanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_left = 228.0
+margin_top = 228.0
+margin_right = 338.0
+margin_bottom = 338.0
+
+[node name="Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons/HealerPanel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 105.0
+margin_bottom = 105.0
 texture_normal = ExtResource( 72 )
-texture_hover = ExtResource( 79 )
-texture_focused = ExtResource( 74 )
 
-[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/HealerButton"]
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/HealerPanel/Button"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -8.0
@@ -435,16 +444,20 @@ margin_right = 2.0
 margin_bottom = 8.0
 texture = ExtResource( 94 )
 
-[node name="FinAlienButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
-margin_left = 208.0
-margin_top = 312.0
-margin_right = 308.0
-margin_bottom = 412.0
+[node name="FinAlienPanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_left = 228.0
+margin_top = 342.0
+margin_right = 338.0
+margin_bottom = 452.0
+
+[node name="Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons/FinAlienPanel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 105.0
+margin_bottom = 105.0
 texture_normal = ExtResource( 59 )
-texture_hover = ExtResource( 54 )
-texture_focused = ExtResource( 55 )
 
-[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/FinAlienButton"]
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/FinAlienPanel/Button"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -8.0
@@ -453,16 +466,20 @@ margin_right = 2.0
 margin_bottom = 8.0
 texture = ExtResource( 94 )
 
-[node name="HornedBruiserButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
-margin_left = 208.0
-margin_top = 416.0
-margin_right = 308.0
-margin_bottom = 516.0
+[node name="HornedBruiserPanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_left = 228.0
+margin_top = 456.0
+margin_right = 338.0
+margin_bottom = 566.0
+
+[node name="Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons/HornedBruiserPanel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 105.0
+margin_bottom = 105.0
 texture_normal = ExtResource( 65 )
-texture_hover = ExtResource( 60 )
-texture_focused = ExtResource( 66 )
 
-[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/HornedBruiserButton"]
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/HornedBruiserPanel/Button"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -8.0
@@ -471,16 +488,20 @@ margin_right = 2.0
 margin_bottom = 8.0
 texture = ExtResource( 94 )
 
-[node name="SlasherButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons"]
-margin_left = 208.0
-margin_top = 520.0
-margin_right = 308.0
-margin_bottom = 620.0
-texture_normal = ExtResource( 92 )
-texture_hover = ExtResource( 93 )
-texture_focused = ExtResource( 88 )
+[node name="SlasherPanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer/AlienButtons"]
+margin_left = 228.0
+margin_top = 570.0
+margin_right = 338.0
+margin_bottom = 680.0
 
-[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/SlasherButton"]
+[node name="Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/AlienButtons/SlasherPanel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 105.0
+margin_bottom = 105.0
+texture_normal = ExtResource( 92 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/AlienButtons/SlasherPanel/Button"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -8.0
@@ -490,26 +511,30 @@ margin_bottom = 8.0
 texture = ExtResource( 94 )
 
 [node name="Spacer" type="Control" parent="VBoxContainer/HBoxContainer"]
-margin_left = 312.0
-margin_right = 352.0
-margin_bottom = 850.0
-rect_min_size = Vector2( 40, 0 )
+margin_left = 342.0
+margin_right = 364.0
+margin_bottom = 898.0
+rect_min_size = Vector2( 22, 0 )
 
 [node name="ElitesBossesButtons" type="VFlowContainer" parent="VBoxContainer/HBoxContainer"]
 unique_name_in_owner = true
-margin_left = 356.0
-margin_right = 560.0
-margin_bottom = 850.0
+margin_left = 368.0
+margin_right = 592.0
+margin_bottom = 898.0
 rect_min_size = Vector2( 0, 10 )
 
-[node name="RhinoButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
-margin_right = 100.0
-margin_bottom = 100.0
+[node name="RhinoPanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
+margin_right = 110.0
+margin_bottom = 110.0
+
+[node name="Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/RhinoPanel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 105.0
+margin_bottom = 105.0
 texture_normal = ExtResource( 26 )
-texture_hover = ExtResource( 29 )
-texture_focused = ExtResource( 46 )
 
-[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/RhinoButton"]
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/RhinoPanel/Button"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -8.0
@@ -518,15 +543,19 @@ margin_right = 2.0
 margin_bottom = 8.0
 texture = ExtResource( 94 )
 
-[node name="MonkButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
-margin_top = 104.0
-margin_right = 100.0
-margin_bottom = 204.0
+[node name="MonkPanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
+margin_top = 114.0
+margin_right = 110.0
+margin_bottom = 224.0
+
+[node name="Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/MonkPanel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 105.0
+margin_bottom = 105.0
 texture_normal = ExtResource( 32 )
-texture_hover = ExtResource( 27 )
-texture_focused = ExtResource( 37 )
 
-[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/MonkButton"]
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/MonkPanel/Button"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -8.0
@@ -535,15 +564,19 @@ margin_right = 2.0
 margin_bottom = 8.0
 texture = ExtResource( 94 )
 
-[node name="ColossusButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
-margin_top = 208.0
-margin_right = 100.0
-margin_bottom = 308.0
+[node name="ColossusPanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
+margin_top = 228.0
+margin_right = 110.0
+margin_bottom = 338.0
+
+[node name="Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/ColossusPanel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 105.0
+margin_bottom = 105.0
 texture_normal = ExtResource( 23 )
-texture_hover = ExtResource( 33 )
-texture_focused = ExtResource( 31 )
 
-[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/ColossusButton"]
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/ColossusPanel/Button"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -8.0
@@ -552,15 +585,19 @@ margin_right = 2.0
 margin_bottom = 8.0
 texture = ExtResource( 94 )
 
-[node name="MomButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
-margin_top = 312.0
-margin_right = 100.0
-margin_bottom = 412.0
-texture_normal = ExtResource( 21 )
-texture_hover = ExtResource( 42 )
-texture_focused = ExtResource( 44 )
+[node name="MomPanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
+margin_top = 342.0
+margin_right = 110.0
+margin_bottom = 452.0
 
-[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/MomButton"]
+[node name="Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/MomPanel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 105.0
+margin_bottom = 105.0
+texture_normal = ExtResource( 21 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/MomPanel/Button"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -8.0
@@ -570,20 +607,24 @@ margin_bottom = 8.0
 texture = ExtResource( 94 )
 
 [node name="Spacer" type="Control" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
-margin_top = 416.0
-margin_right = 100.0
-margin_bottom = 516.0
+margin_top = 456.0
+margin_right = 110.0
+margin_bottom = 556.0
 rect_min_size = Vector2( 100, 100 )
 
-[node name="PredatorButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
-margin_top = 520.0
-margin_right = 100.0
-margin_bottom = 620.0
-texture_normal = ExtResource( 11 )
-texture_hover = ExtResource( 10 )
-texture_focused = ExtResource( 52 )
+[node name="PredatorPanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
+margin_top = 560.0
+margin_right = 110.0
+margin_bottom = 670.0
 
-[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/PredatorButton"]
+[node name="Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/PredatorPanel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 105.0
+margin_bottom = 105.0
+texture_normal = ExtResource( 11 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/PredatorPanel/Button"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -8.0
@@ -593,26 +634,30 @@ margin_bottom = 8.0
 texture = ExtResource( 94 )
 
 [node name="Spacer2" type="Control" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
-margin_top = 624.0
-margin_right = 100.0
-margin_bottom = 724.0
+margin_top = 674.0
+margin_right = 110.0
+margin_bottom = 774.0
 rect_min_size = Vector2( 100, 100 )
 
 [node name="Spacer3" type="Control" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
-margin_top = 728.0
-margin_right = 100.0
-margin_bottom = 828.0
+margin_top = 778.0
+margin_right = 110.0
+margin_bottom = 878.0
 rect_min_size = Vector2( 100, 100 )
 
-[node name="ButcherButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
-margin_left = 104.0
-margin_right = 204.0
-margin_bottom = 100.0
+[node name="ButcherPanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
+margin_left = 114.0
+margin_right = 224.0
+margin_bottom = 110.0
+
+[node name="Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/ButcherPanel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 105.0
+margin_bottom = 105.0
 texture_normal = ExtResource( 36 )
-texture_hover = ExtResource( 40 )
-texture_focused = ExtResource( 25 )
 
-[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/ButcherButton"]
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/ButcherPanel/Button"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -8.0
@@ -621,16 +666,20 @@ margin_right = 2.0
 margin_bottom = 8.0
 texture = ExtResource( 94 )
 
-[node name="CrocoButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
-margin_left = 104.0
-margin_top = 104.0
-margin_right = 204.0
-margin_bottom = 204.0
+[node name="CrocoPanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
+margin_left = 114.0
+margin_top = 114.0
+margin_right = 224.0
+margin_bottom = 224.0
+
+[node name="Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/CrocoPanel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 105.0
+margin_bottom = 105.0
 texture_normal = ExtResource( 39 )
-texture_hover = ExtResource( 30 )
-texture_focused = ExtResource( 41 )
 
-[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/CrocoButton"]
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/CrocoPanel/Button"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -8.0
@@ -639,16 +688,20 @@ margin_right = 2.0
 margin_bottom = 8.0
 texture = ExtResource( 94 )
 
-[node name="InsectButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
-margin_left = 104.0
-margin_top = 208.0
-margin_right = 204.0
-margin_bottom = 308.0
+[node name="InsectPanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
+margin_left = 114.0
+margin_top = 228.0
+margin_right = 224.0
+margin_bottom = 338.0
+
+[node name="Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/InsectPanel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 105.0
+margin_bottom = 105.0
 texture_normal = ExtResource( 20 )
-texture_hover = ExtResource( 38 )
-texture_focused = ExtResource( 34 )
 
-[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/InsectButton"]
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/InsectPanel/Button"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -8.0
@@ -657,16 +710,20 @@ margin_right = 2.0
 margin_bottom = 8.0
 texture = ExtResource( 94 )
 
-[node name="DemonButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
-margin_left = 104.0
-margin_top = 312.0
-margin_right = 204.0
-margin_bottom = 412.0
-texture_normal = ExtResource( 24 )
-texture_hover = ExtResource( 35 )
-texture_focused = ExtResource( 43 )
+[node name="DemonPanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
+margin_left = 114.0
+margin_top = 342.0
+margin_right = 224.0
+margin_bottom = 452.0
 
-[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/DemonButton"]
+[node name="Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/DemonPanel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 105.0
+margin_bottom = 105.0
+texture_normal = ExtResource( 24 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/DemonPanel/Button"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -8.0
@@ -676,22 +733,26 @@ margin_bottom = 8.0
 texture = ExtResource( 94 )
 
 [node name="Spacer4" type="Control" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
-margin_left = 104.0
-margin_top = 416.0
-margin_right = 204.0
-margin_bottom = 516.0
+margin_left = 114.0
+margin_top = 456.0
+margin_right = 224.0
+margin_bottom = 556.0
 rect_min_size = Vector2( 100, 100 )
 
-[node name="InvokerButton" type="TextureButton" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
-margin_left = 104.0
-margin_top = 520.0
-margin_right = 204.0
-margin_bottom = 620.0
-texture_normal = ExtResource( 28 )
-texture_hover = ExtResource( 45 )
-texture_focused = ExtResource( 22 )
+[node name="InvokerPanel" type="PanelContainer" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons"]
+margin_left = 114.0
+margin_top = 560.0
+margin_right = 224.0
+margin_bottom = 670.0
 
-[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/InvokerButton"]
+[node name="Button" type="TextureButton" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/InvokerPanel"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 105.0
+margin_bottom = 105.0
+texture_normal = ExtResource( 28 )
+
+[node name="IsModified" type="TextureRect" parent="VBoxContainer/HBoxContainer/ElitesBossesButtons/InvokerPanel/Button"]
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -8.0
@@ -702,20 +763,20 @@ texture = ExtResource( 94 )
 
 [node name="AlienFormHolder" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
 unique_name_in_owner = true
-margin_left = 564.0
+margin_left = 596.0
 margin_right = 1920.0
-margin_bottom = 850.0
+margin_bottom = 898.0
 size_flags_horizontal = 3
 custom_constants/separation = 0
 
 [node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder"]
-margin_right = 1356.0
+margin_right = 1324.0
 margin_bottom = 850.0
 rect_min_size = Vector2( 0, 850 )
 
 [node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer"]
-margin_left = 68.0
-margin_right = 1287.0
+margin_left = 52.0
+margin_right = 1271.0
 margin_bottom = 850.0
 rect_min_size = Vector2( 1219, 850 )
 size_flags_horizontal = 6
@@ -1321,7 +1382,6 @@ rect_min_size = Vector2( 20, 0 )
 margin_left = 24.0
 margin_right = 142.0
 margin_bottom = 54.0
-min_value = 1.0
 value = 1.0
 
 [node name="Spacer3" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/BaseDropChance"]
@@ -1344,7 +1404,6 @@ rect_min_size = Vector2( 20, 0 )
 margin_left = 24.0
 margin_right = 142.0
 margin_bottom = 54.0
-min_value = 1.0
 value = 1.0
 
 [node name="Spacer3" type="Control" parent="VBoxContainer/HBoxContainer/AlienFormHolder/ScrollContainer/PanelContainer/AlienFormHolderInner/AlienFormWrapper/Inputs/ItemDropChance"]
@@ -1641,9 +1700,9 @@ rect_min_size = Vector2( 10, 0 )
 [node name="BackButton" type="Button" parent="VBoxContainer"]
 unique_name_in_owner = true
 margin_left = 826.0
-margin_top = 975.0
+margin_top = 999.0
 margin_right = 1093.0
-margin_bottom = 1040.0
+margin_bottom = 1064.0
 size_flags_horizontal = 4
 text = "MENU_BACK"
 script = ExtResource( 2 )

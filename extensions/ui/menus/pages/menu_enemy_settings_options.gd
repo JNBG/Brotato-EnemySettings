@@ -159,6 +159,10 @@ onready var alien_name = $"%Name"
 onready var alien_buttons = $"%AlienButtons"
 onready var elites_bosses_buttons = $"%ElitesBossesButtons"
 
+var allPanels = []
+var basetheme = load("res://resources/themes/base_theme.tres")
+var enemy_theme = load("res://mods-unpacked/MincedMeatMole-EnemySettings/ui/menus/enemy_settings_menu_theme.tres")
+
 func _ready():
 	pass
 
@@ -167,20 +171,25 @@ func init():
 	back_button.connect("pressed", self, "_on_BackButton_pressed")
 
 	_enemy_settings_load_data()
-
+	allPanels = []
+	
 	for alien in aliens:
-		alien_buttons.get_node(alien.name.replace(" ","")+"Button").connect("pressed", self, "_on_enemy_button_pressed", [alien.name, alien.number])
+		var panel = alien_buttons.get_node(alien.name.replace(" ","")+"Panel")
+		allPanels.append(panel)
+		panel.get_node("Button").connect("pressed", self, "_on_enemy_button_pressed", [alien.name, alien.number, panel])
 		if _alien_was_modified(alien.number):
-			alien_buttons.get_node(alien.name.replace(" ","")+"Button/IsModified").visible = true
+			alien_buttons.get_node(alien.name.replace(" ","")+"Panel/Button/IsModified").visible = true
 		else:
-			alien_buttons.get_node(alien.name.replace(" ","")+"Button/IsModified").visible = false
+			alien_buttons.get_node(alien.name.replace(" ","")+"Panel/Button/IsModified").visible = false
 
 	for elite_boss in elites_bosses:
-		elites_bosses_buttons.get_node(elite_boss.name.replace(" ","")+"Button").connect("pressed", self, "_on_enemy_button_pressed", [elite_boss.name, elite_boss.number])
+		var panel = elites_bosses_buttons.get_node(elite_boss.name.replace(" ","")+"Panel")
+		allPanels.append(panel)
+		panel.get_node("Button").connect("pressed", self, "_on_enemy_button_pressed", [elite_boss.name, elite_boss.number, panel])
 		if _alien_was_modified(elite_boss.number):
-			elites_bosses_buttons.get_node(elite_boss.name.replace(" ","")+"Button/IsModified").visible = true
+			elites_bosses_buttons.get_node(elite_boss.name.replace(" ","")+"Panel/Button/IsModified").visible = true
 		else:
-			elites_bosses_buttons.get_node(elite_boss.name.replace(" ","")+"Button/IsModified").visible = false
+			elites_bosses_buttons.get_node(elite_boss.name.replace(" ","")+"Panel/Button/IsModified").visible = false
 
 	reset_button.connect("pressed", self, "_on_reset_button_pressed")
 
@@ -189,8 +198,12 @@ func init():
 		alien_info_wrapper.get_node("Inputs/"+single_stat.selector+"/"+single_stat.type).connect("toggled", self, "_save_single_value", [single_stat.stat]);
 
 
-func _on_enemy_button_pressed(name, alienid):
-
+func _on_enemy_button_pressed(name, alienid, panel = null):
+	if panel != null:
+		for single_panel in allPanels:
+			single_panel.set_theme(basetheme)
+		panel.set_theme(enemy_theme)
+		
 	current_selected_alien = alienid;
 	current_selected_alien_name = name;
 	var base_stats = load("res://mods-unpacked/MincedMeatMole-EnemySettings/ui/enemies/"+alienid+"/init_"+str(int(alienid))+"_stats.tres");
@@ -241,8 +254,8 @@ func _on_enemy_button_pressed(name, alienid):
 		alien_data[single_stat.stat] = val
 		enemy_settings_save_data[current_selected_alien][single_stat.stat] = val
 
-	var alien_button_ismod = alien_buttons.get_node(current_selected_alien_name.replace(" ","")+"Button/IsModified")
-	var elite_boss_button_ismod = elites_bosses_buttons.get_node(current_selected_alien_name.replace(" ","")+"Button/IsModified")
+	var alien_button_ismod = alien_buttons.get_node(current_selected_alien_name.replace(" ","")+"Panel/Button/IsModified")
+	var elite_boss_button_ismod = elites_bosses_buttons.get_node(current_selected_alien_name.replace(" ","")+"Panel/Button/IsModified")
 	var alien_was_modified = _alien_was_modified(current_selected_alien)
 	if (alien_button_ismod != null):
 		if alien_was_modified:
@@ -272,8 +285,8 @@ func _save_single_value(value, stat):
 	alien_data[stat] = value
 	enemy_settings_save_data[current_selected_alien][stat] = value
 
-	var alien_button_ismod = alien_buttons.get_node(current_selected_alien_name.replace(" ","")+"Button/IsModified")
-	var elite_boss_button_ismod = elites_bosses_buttons.get_node(current_selected_alien_name.replace(" ","")+"Button/IsModified")
+	var alien_button_ismod = alien_buttons.get_node(current_selected_alien_name.replace(" ","")+"Panel/Button/IsModified")
+	var elite_boss_button_ismod = elites_bosses_buttons.get_node(current_selected_alien_name.replace(" ","")+"Panel/Button/IsModified")
 	var alien_was_modified = _alien_was_modified(current_selected_alien)
 	if (alien_button_ismod != null):
 		if alien_was_modified:
@@ -306,10 +319,10 @@ func _on_reset_button_pressed():
 	_enemy_settings_save_data()
 	_on_enemy_button_pressed(current_selected_alien_name, current_selected_alien)
 
-	var alien_button_ismod = alien_buttons.get_node(current_selected_alien_name.replace(" ","")+"Button/IsModified")
+	var alien_button_ismod = alien_buttons.get_node(current_selected_alien_name.replace(" ","")+"Panel/Button/IsModified")
 	if (alien_button_ismod != null):
 		alien_button_ismod.visible = false
-	var elite_boss_button_ismod = elites_bosses_buttons.get_node(current_selected_alien_name.replace(" ","")+"Button/IsModified")
+	var elite_boss_button_ismod = elites_bosses_buttons.get_node(current_selected_alien_name.replace(" ","")+"Panel/Button/IsModified")
 	if (elite_boss_button_ismod != null):
 		elite_boss_button_ismod.visible = false
 
